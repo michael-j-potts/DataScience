@@ -6,6 +6,7 @@
 
 #Further ideas:
 #Consider refining with a SVM
+#Consider evaluating other data sets with this classifier
 
 import numpy as np
 import pandas as pd
