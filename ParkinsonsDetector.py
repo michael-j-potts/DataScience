@@ -1,3 +1,12 @@
+#Title: ParkinsonsDetector.py
+#Description: This program evaluates Parkinsons data and predicts whether a patient may have PD
+#Date: Sept 22nd, 2021
+#Author: Michael Potts
+#Version 1.0
+
+#Further ideas:
+#Consider refining with a SVM
+
 import numpy as np
 import pandas as pd
 from IPython.display import display
@@ -11,7 +20,6 @@ from sklearn.model_selection import train_test_split
 # import the data
 # https://archive.ics.uci.edu/ml/machine-learning-databases/parkinsons/
 df = pd.read_csv("/path to your data set downloaded from UCI")
-df2 = pd.read_csv("/path to your data set downloaded from UCI")
 print("Importing Parkinsons' disease data...")
 # display(df)
 
