@@ -3,6 +3,7 @@
 #Date: Sept 22nd, 2021
 #Author: Michael Potts
 #Version 1.0
+#Copyright: 2021, Michael J. Potts
 
 #Further ideas:
 #Consider refining with a SVM
