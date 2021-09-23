@@ -16,6 +16,9 @@ from sklearn.preprocessing import MinMaxScaler
 from sklearn.naive_bayes import GaussianNB, BernoulliNB
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
+from sklearn.pipeline import make_pipeline
+from sklearn.preprocessing import StandardScaler
+from sklearn.svm import SVC
 
 #inspiration provided by: https://data-flair.training/blogs/python-machine-learning-project-detecting-parkinson-disease/
 
