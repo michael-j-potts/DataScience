@@ -6,7 +6,6 @@
 #Copyright: 2021, Michael J. Potts
 
 #Further ideas:
-#Consider refining with a SVM
 #Consider evaluating other data sets with this classifier
 
 import numpy as np
