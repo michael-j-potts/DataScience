@@ -49,6 +49,10 @@ Y_predict_bnb = bnb.fit(X_train, Y_train).predict(X_test)
 rfc = RandomForestClassifier(n_estimators=20, max_depth=8, random_state=101)
 Y_predict_rfc = rfc.fit(X_train, Y_train).predict(X_test)
 
-print("Gaussian accuracy = ", np.round(100 * (1 - ((Y_test != Y_predict_gnb).sum() / N)), 3), "%")
-print("Bernoulli accuracy = ", np.round(100 * (1 - ((Y_test != Y_predict_bnb).sum() / N)), 3), "%")
-print("Random forest accuracy = ", np.round(100 * (1 - ((Y_test != Y_predict_rfc).sum() / N)), 3), "%")
+svm = make_pipeline(StandardScaler(), SVC(gamma="auto"))
+Y_predict_svm = svm.fit(X_train, Y_train).predict(X_test)
+
+print("Gaussian prediction accuracy = ", np.round(100 * (1 - ((Y_test != Y_predict_gnb).sum() / N)), 3), "%")
+print("Bernoulli prediction accuracy = ", np.round(100 * (1 - ((Y_test != Y_predict_bnb).sum() / N)), 3), "%")
+print("Random forest prediction accuracy = ", np.round(100 * (1 - ((Y_test != Y_predict_rfc).sum() / N)), 3), "%")
+print("SVM prediction accuracy = ", np.round(100 * (1 - ((Y_test != Y_predict_svm).sum() / N)), 3), "%")
