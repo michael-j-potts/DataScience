@@ -5,13 +5,6 @@ import time
 import pandas as pd
 import numpy as np
 
-#TO DO:
-#check why in data structuring, some patients only have one visit recorded
-#remove patients that appear in both lists
-#add in medications
-
-pd.set_option('display.max_rows', None)
-
 #Need to create targets
 ICD10_codes = ['B342', 'J00', 'J069', 'J120', 'J121', 'J122', 'J123', 'J128', 'J129', 'J206' 'J210', 'J211',
                 'J218', 'J219', 'J22', 'J80', 'J960', 'J969', 'P221', 'P228', 'P229', 'P28.5', 'P2881', 'R060', 'R068',
